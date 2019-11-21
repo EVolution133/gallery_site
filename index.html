@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="SHORTCUT ICON" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,li {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .content{
+            width: 100%;
+            flex-direction: row-reverse;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .c-flex{
+            display: flex;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .center{
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 559px){
+            .content{
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .c-flex{
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header" class="flex wrap">
+
+        <nav id="category">
+            <ul class="flex">
+                <li class="menu">Layout</li>
+                <li class="menu">css</li>
+                <li class="menu">js</li>
+                <li>
+                    <div class="menu-trigger" href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+    
+    <div class="wrapper">
+
+        <div class="content">
+            <div class="topics">
+
+            </div>
+        
+            <ul id="nav_1" class="flex wrap center">
+                <li class="center">
+                    <div><p>button</p></div>
+                </li>
+                <li class="center">
+                    <div><p>button</p></div>
+                </li>
+                <li class="center">
+                    <div><p>button</p></div>
+                </li>
+                <li class="center">
+                    <div><p>button</p></div>
+                </li>
+                <li class="center">
+                    <div><p>button</p></div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- トップボタン -->
+        <div class="top">
+            <a href="#header"><p>▲</p></a>
+        </div>
+
+        <div class="overlay"></div>
+
+    </div>
+    
+    <nav class="mobile_nav">
+        <ul class="flex">
+            <li class="center"><a href="#">layout</a></li>
+            <li class="center"><a href="#">css</a></li>
+            <li class="center"><a href="#">js</a></li>
+        </ul>
+    </nav>
+
+    <script src="js/nav.js"></script>
+
+    <script>
+        // トップボタンのスクロールアニメーションをなめらかに
+        $('.top').click(function () {
+            $('body, html').animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+    </script>
+
+
+
+</body>
+</html>
