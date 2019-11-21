@@ -22,7 +22,7 @@
         }
         
         .content{
-            width: 100%;
+            max-width: 980px;
             flex-direction: row-reverse;
             margin: 0 auto;
             text-align: center;
@@ -63,7 +63,7 @@
 
 <body>
 
-    <div id="header" class="flex wrap">
+    <header class="flex wrap">
 
         <nav id="category">
             <ul class="flex">
@@ -82,13 +82,9 @@
     
     </div>
     
-    <div class="wrapper">
+    <main class="wrapper">
 
-        <div class="content">
-            <div class="topics">
-
-            </div>
-        
+        <article class="content">        
             <ul id="nav_1" class="flex wrap center">
                 <li class="center">
                     <div><p>button</p></div>
@@ -102,11 +98,16 @@
                 <li class="center">
                     <div><p>button</p></div>
                 </li>
-                <li class="center">
-                    <div><p>button</p></div>
-                </li>
             </ul>
+
+            <div class="topics">
+
+            </div>
         </div>
+
+        <footer>
+
+        </footer>
 
         <!-- トップボタン -->
         <div class="top">

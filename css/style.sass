@@ -12,7 +12,10 @@
         margin-left: 20%
 
 .content
-    #nav_1
+    #topic
+        border: 1px
+
+        #nav_1
         width: 100%
         justify-content: space-around
 
@@ -57,7 +60,7 @@
         min-height: 100vh
         transition: all .5s
 
-    #header
+    header
         width: 100%
                 
         .content
@@ -80,7 +83,6 @@
                 margin-left: 0
 
             &.open
-
                 ul
                     position: absolute
                     width: 100%
@@ -157,16 +159,15 @@
         position: fixed
         top: 0
         z-index: 2
-        transition: all .5s
         text-align: center
+        transition: opacity .5s
 
     .mobile_nav.open
         display: inherit
         width: 100%
-        background-color: #F3F0E9
         position: fixed
         top: 64px
-        transition: all .5s
+        opacity: .9
 
         .flex
             display: flex
@@ -175,14 +176,18 @@
             li
                 height: 60px
                 text-align: center
-
-                &:hover
-                    background-color: #969696
+                font-weight: bold
 
             a
                 width: 100%
                 padding: 20px 0
                 text-decoration: none
+                background-color: #434343
+                color: #FFFFFF
+                
+                &:hover
+                    background-color: #FFFFFF
+                    color: #434343
 
     #nav_1
         width: 100%
